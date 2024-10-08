@@ -1,0 +1,26 @@
+# change to your api_key & base_url
+llm_3_5:
+  api_type: "openai"
+  base_url: ""
+  api_key: ""
+  model: "gpt-3.5-turbo-16k"
+
+llm_4o:
+  api_type: "openai"
+  base_url: ""
+  api_key: ""
+  model: "gpt-4o-2024-08-06"
+
+llm_review:
+  api_type: "openai"
+  base_url: ""
+  api_key: ""
+  model: "gpt-4o-2024-08-06"
+
+tavily:
+  api_key: 
+
+LangChainHub: 
+
+Qwen:
+  api_key: ""
