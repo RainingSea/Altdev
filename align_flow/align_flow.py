@@ -242,7 +242,7 @@ def arthur_talk(role: Role, team: Team):
                 PASS = False
                 break
 
-        # --------- 根据 Agent 讨论结果（可能包含人类）来决定是否修改还是结束对齐
+        # decide whether to modify or end the alignment based on the results from the Agents (which may include humans).
         if PASS == False:
             whether_align = True
             # extract the not align check result to reduce context length
