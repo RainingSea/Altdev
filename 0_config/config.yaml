@@ -8,7 +8,7 @@ llm_3_5:
 llm_4o:
   api_type: "openai"
   base_url: "https://api.chatanywhere.tech"
-  api_key: "sk-nF4KFp0FggnT6bfpH2JwYhRsFWnPpfohEAtERbHlMXCIdlki"
+  api_key: ""
   model: "gpt-4o-ca"
 
 tavily:
