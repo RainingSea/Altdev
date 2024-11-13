@@ -32,6 +32,7 @@ class Code_Tester(Role):
         install_turn = 1
         Max_test_turn = 1 
         Max_install_turn = 3
+        
         while test_turn <= Max_test_turn and install_turn <= Max_install_turn:
             main_py_path = self.get_entry_file()
             print(main_py_path)

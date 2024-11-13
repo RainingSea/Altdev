@@ -26,6 +26,11 @@ class Team(BaseModel):
     # origin requirement from user
     origin_requirement: str = ""
 
+    # the number of align checking
+    align_check_num: int = 1
+    # the number of mad
+    mad_num: int = 1
+
     all_messages_d: dict[str, Message] = Field(
         default_factory=dict, validate_default=True
     )

@@ -1,3 +1,7 @@
+# ---------------------
+# prompt from "Reflexion", as a reference, not needed for our project
+# ---------------------
+
 from langchain.prompts import PromptTemplate
 
 COT_INSTRUCTION = """

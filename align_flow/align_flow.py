@@ -36,7 +36,7 @@ def arthur_talk(role: Role, team: Team):
     Team.log.info("[1] Roles go to Check")
 
     align_talk_turn = 1
-    MAX_ALIGN_TURN = 7
+    MAX_ALIGN_TURN = Team.align_check_num
 
     while align_talk_turn <= MAX_ALIGN_TURN:
         print("Begin the " + str(align_talk_turn) + " turn Alignment")
@@ -122,7 +122,8 @@ def arthur_talk(role: Role, team: Team):
         # [1-2] at least one role misalign, enter MAD-S / MAD-M
 
         sup_turn = 1
-        MAX_SUP_TURN = 1
+        MAX_SUP_TURN = Team.mad_num
+
         # copy check_result_msg because MAD needs to change.
         raw_complement_suggestion = []
         for _r in check_result_msg:
@@ -320,8 +321,7 @@ def read_suggestion(suggestion):
 
 
 def str_to_role(str_role_list):
-    """
-    """
+    """ """
     f = re.findall("[\[](.*?)[\]]", str_role_list)
     for role_profile in f:
         try:

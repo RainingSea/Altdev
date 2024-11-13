@@ -104,7 +104,7 @@ class Programmer(Role):
         Team.log.info("[1] Roles go to Check")
 
         align_talk_turn = 1
-        MAX_ALIGN_TURN = 7
+        MAX_ALIGN_TURN = Team.align_check_num
 
         while align_talk_turn <= MAX_ALIGN_TURN:
 
@@ -185,7 +185,7 @@ class Programmer(Role):
             # [2] at least one role misalign, enter MAD-S / MAD-M
 
             sup_turn = 1
-            MAX_SUP_TURN = 1
+            MAX_SUP_TURN = Team.mad_num
 
             raw_complement_suggestion = []
             for _r in code_check_msg:
@@ -515,6 +515,5 @@ class Programmer(Role):
         return Team.all_messages[3]
 
     def split_code_plan(self, code_plan: str):
-        """
-        """
+        """ """
         return code_plan.split("---")

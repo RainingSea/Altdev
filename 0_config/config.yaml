@@ -7,20 +7,14 @@ llm_3_5:
 
 llm_4o:
   api_type: "openai"
-  base_url: ""
-  api_key: ""
-  model: "gpt-4o-2024-08-06"
-
-llm_review:
-  api_type: "openai"
-  base_url: ""
-  api_key: ""
-  model: "gpt-4o-2024-08-06"
+  base_url: "https://api.chatanywhere.tech"
+  api_key: "sk-nF4KFp0FggnT6bfpH2JwYhRsFWnPpfohEAtERbHlMXCIdlki"
+  model: "gpt-4o-ca"
 
 tavily:
-  api_key: 
+  api_key:
 
-LangChainHub: 
+LangChainHub:
 
 Qwen:
   api_key: ""

@@ -1,0 +1,3 @@
+@echo off
+python start_sh.py --name "Photo_Sticker_Maker" --project "A software that allows users to create customized stickers using their own photos. Users can select an image, choose the desired shape and size of the sticker, and add text or decorative elements. The software provides easy-to-use tools for cropping, resizing, and adding effects to the photos. Once the sticker is created, users can save it as a transparent PNG file to use in messaging apps or social media platforms. Implemented using Python." 
+pause

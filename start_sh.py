@@ -39,11 +39,12 @@ def start_project():
     # Build Agent's Team
     team = Team()
     Team.project_name = project_name
+    Team.align_check_num = 1
+    Team.mad_num = 1
+
     # set to absolute path for os.makedirs
     projdir = (
-        "D:\\02-Project\\02-Align\\models\\altdev\\project_dir\\"
-        + project_name
-        + "\\"
+        "D:\\02-Project\\02-Align\\models\\altdev\\project_dir\\" + project_name + "\\"
     )
     Team.set_projdir(projdir)
     Team.set_log()
